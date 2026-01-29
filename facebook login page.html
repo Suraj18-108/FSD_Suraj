@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Facebook – Log In or Sign Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(239, 242, 243);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 120px;
+    }
+
+  
+    .left {
+      
+      max-width: 500px;
+    }
+
+    .logo {
+      color: rgb(8, 0, 255);
+      font-size: 65px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .login-box {
+      background: white;
+      padding: 20px;
+      width: 400px;
+      height:340px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 3px solid whitesmoke;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-btn {
+      background-color:rgb(8, 0, 255);
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-btn:hover {
+      background-color: rgb(8, 0, 255);
+    }
+
+    .forgot {
+      display: block;
+      margin: 16px 0;
+      color: rgb(8, 0, 255);
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .divider {
+      border-top: 1px solid #dadde1;
+      margin: 20px 0;
+    }
+
+    .create-button {
+      background-color: #42b72a;
+      color: white;
+      border: none;
+      padding: 14px 16px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .page-link {
+      margin-top: 28px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .page-link strong {
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+      }
+
+      .left {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <div class="logo">facebook</div>
+      <div class="tagline">
+        Facebook helps you connect and share with the people in your life.
+      </div>
+    </div>
+
+    <div>
+      <div class="login-box">
+        <input type="text" placeholder="Email address or phone number">
+        <input type="password" placeholder="Password">
+        <button class="login-btn">Log in</button>
+
+        <a href="#" class="forgot">Forgotten password?</a>
+
+        <div class="divider"></div>
+
+        <button class="create-button">Create new account</button>
+      </div>
+
+      <div class="page-link">
+        <strong>Create a Page</strong> for a celebrity, brand or business.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
